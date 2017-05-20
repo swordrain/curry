@@ -21,4 +21,6 @@ foo.apply( null, [2, 3] ); // a:2, b:3
 var bar = foo.bind( null, 2 ); bar( 3 ); // a:2, b:3
 ```
 
+
+注意`bind`使用时所传入的第二个参数
 > 摘自你不知道的JavaScript上卷

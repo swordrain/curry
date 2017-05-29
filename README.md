@@ -1,6 +1,7 @@
-# curry
-complicated curry js example
+# snippers
 
+## curry
+a complicated curry js example
 
 ```
 function foo(p1,p2) { 
@@ -24,3 +25,21 @@ var bar = foo.bind( null, 2 ); bar( 3 ); // a:2, b:3
 
 注意`bind`使用时所传入的第二个参数
 > 摘自你不知道的JavaScript上卷
+
+
+# arrow functions don’t create a closure
+```
+function puzzle() {
+  return function () {
+    console.log(arguments)
+  }
+}
+puzzle('a', 'b', 'c')(1, 2, 3)
+```
+
+```
+function puzzle() {
+  return () => console.log(arguments)
+}
+puzzle('a', 'b', 'c')(1, 2, 3)
+```

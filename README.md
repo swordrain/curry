@@ -27,7 +27,7 @@ var bar = foo.bind( null, 2 ); bar( 3 ); // a:2, b:3
 > 摘自你不知道的JavaScript上卷
 
 
-# arrow functions don’t create a closure
+## arrow functions don’t create a closure
 ```
 function puzzle() {
   return function () {
@@ -43,3 +43,12 @@ function puzzle() {
 }
 puzzle('a', 'b', 'c')(1, 2, 3)
 ```
+
+## arrow function's curly brac
+```
+[1, 2, 3].map(value => { number: value })
+```
+```
+[1, 2, 3].map(value => ({ number: value }))
+```
+

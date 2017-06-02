@@ -23,7 +23,10 @@ var bar = foo.bind( null, 2 ); bar( 3 ); // a:2, b:3
 ```
 
 
-注意`bind`使用时所传入的第二个参数
+注意`bind`使用时可以传不止一个参数
+
+今天知道`bind`后返回的`function`是没有`prototype`的，但是不影响`new`调用后的结果，`new`后返回的实例的`__proto`扔指向`bind`前那个`function`的`prototype`
+
 > 摘自你不知道的JavaScript上卷
 
 

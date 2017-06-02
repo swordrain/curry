@@ -55,7 +55,7 @@ function puzzle() {
 puzzle('a', 'b', 'c')(1, 2, 3)
 ```
 
-## arrow function's curly brac
+## careful about arrow function's curly brac
 ```
 [1, 2, 3].map(value => { number: value })
 ```

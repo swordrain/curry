@@ -36,7 +36,7 @@ console.log(instance.__proto === fun.prototype)
 ```
 
 > 摘自你不知道的JavaScript上卷
-
+> bind后的function是没有prototype属性的
 
 ## arrow functions don’t create a closure
 ```
